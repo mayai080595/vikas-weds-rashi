@@ -126,12 +126,12 @@ var DEF={
   // Venue line shown on the scratch card
   place:"GCC Hotels & Club",
   // Taglines
-  tag:"Litti Chokha meets Dal Baati",
+  tag:"Litthi Chokha meets Dal Baati",
   tag2:"Come hungry. Come dancing.",
   // Invitation message
   intro:"With joyful hearts and the blessings of our families, we invite you to celebrate the beginning of our forever.",
   // Hashtag
-  hash:"#ViRaDiWedding",
+  hash:"#ViKiRashi",
   // Lines shown under the hashtag (separate lines with \n)
   line:"Two traditions.\nOne beautiful forever.\nDifferent roots, a shared rhythm, and a love that feels like home.",
   // Our story heading
@@ -141,8 +141,8 @@ var DEF={
   // Sign-off line shown under the story and in the footer
   sign:"With love, Vikas & Rashi",
   // Contact details (phone = country code + number, digits only)
-  email:"vikaswedsrashi@gmail.com",
-  phone:"917738875957",
+  email:"you@example.com",
+  phone:"910000000000",
   // RSVP Google Form: every RSVP is also saved to your Google Form (and its Sheet). Set up email alerts inside the form: Responses tab > bell icon > "Get email notifications for new responses"
   gform:"https://docs.google.com/forms/d/e/1FAIpQLSfLO57OBM5TvmmuoXafKNe13zjb-VT2mYU37DdidMlw0wZkrA/formResponse",
   // The form's field ids (from its pre-filled link, like entry.123456789). Fill in these four, otherwise the Google Form is skipped
@@ -151,19 +151,54 @@ var DEF={
   gYes:"Joyfull accepts", gNo:"Regretfully declines",
   // Venue tab: name, address, Google Maps link, note
   venue:"North Lawns, GCC Hotel and Club",
-  addr:"7VMG+JXC, Phase 1, Gaurav Sankalp, Mira Road East, Mira Bhayandar, Maharashtra 401107",
+  addr:"North Lawns, GCC Hotel and Club, Mira Road",
   map:"https://www.google.com/maps/search/?api=1&query=North+Lawns+GCC+Hotel+and+Club+Mira+Road",
   // Embedded map shown in the Venue section (Google Maps > Share > Embed a map > copy the src link; "" hides the map)
   mapEmbed:"https://www.google.com/maps?q=North+Lawns+GCC+Hotel+and+Club+Mira+Road&output=embed",
   vnote:"Travel and stay details will be shared with you closer to the date.",
   // Events tab: one per line, written as  Name | When | Description  (separate lines with \n)
-  events:"Sangeet | 21 Nov · Evening 8:00 p.m. | Dhol, dance-offs and dinner.\nHaldi | 22 Nov · Morning 10:00 a.m. | A splash of turmeric, songs and plenty of mischief.\nBaraat Prasthan | 24 Nov · Evening 6:00 p.m. | Band, baja, the baraatis, and fireworks.\nVarmala followed by Reception | 24 Nov · Evening 8:00 p.m. | The exchange of garlands and promise to be together forever, the blessings.\nPheras | 25 Nov · Night 1:15 a.m. | The vows, the pheras, the blessings.",
+  events:"Haldi | 18 Jan · Morning | A splash of turmeric, songs and plenty of mischief.\nSangeet | 18 Jan · Evening | Dhol, dance-offs and dinner.\nWedding | 19 Jan · Morning | The pheras, the blessings, the feast.",
   // Wardrobe tab: one per line, written as  Event | Colours | Women | Men  (separate lines with \n)
   wardrobe:"Haldi | Yellow & white | Cotton sarees, light lehengas | Kurta, pastel or yellow\nSangeet | Jewel tones | Lehenga, gown, indo-western | Bandhgala, sherwani\nWedding | Pastels & gold | Silk saree, lehenga | Sherwani, kurta set",
   // Background song, starts when the seal is tapped (a direct .mp3 link, or a file next to index.html; "" for no music)
   music:"https://hqqvepohjgypzfebnjzv.supabase.co/storage/v1/object/public/music/mangalyam.mp3",
   // Story photo: put the image file next to index.html and write its name (default story.jpg). If the file is missing, the photo box is simply hidden
-  photo2:"vikasrashi.jpeg"
+  photo2:"story.jpg"
+};
+/* ---- Hindi and Marathi versions of the text above. Anything not listed here uses the English line. ---- */
+var TR={
+ hi:{
+  n1:"विकास", n2:"राशी",
+  p1:"~पौत्र / नाती\n~दादी–दादा\nस्व. श्रीमती रामावतीदेवी एवं स्व. श्री रामनरेश गुप्ता\n~नानी–नाना\nश्रीमती राजकुमारी एवं स्व. श्री जगन्नाथ गुप्ता\n~सुपुत्र\nश्रीमती नीलू एवं श्री प्रकाश गुप्ता",
+  p2:"~सुपुत्री\nश्रीमती अनीता एवं श्री राजकुमार दरक",
+  dateText:"24 नवंबर 2026", place:"GCC होटल्स एंड क्लब",
+  tag:"लिट्टी चोखा मिले दाल बाटी से", tag2:"भूखे आइए, नाचने आइए।",
+  intro:"हर्ष भरे हृदय और परिवारों के आशीर्वाद के साथ, हम आपको हमारे अनंत साथ की शुरुआत का उत्सव मनाने के लिए आमंत्रित करते हैं।",
+  line:"दो परंपराएँ।\nएक सुंदर सदा का साथ।\nअलग जड़ें, एक साझा ताल, और एक प्रेम जो घर जैसा लगे।",
+  storyT:"लंबा रास्ता",
+  story:"रोज़मर्रा की बातों और छोटी-छोटी चीज़ों के बीच कहीं, हमें कुछ असाधारण मिल गया: एक-दूसरे का साथ। अब हमारी दो दुनियाएँ एक हो रही हैं, जिसमें हर परंपरा, हर हँसी और हर उस इंसान के लिए जगह है जिसे हम प्यार करते हैं।\n\nऔर यह तो बस शुरुआत है…",
+  sign:"प्रेम सहित, विकास और राशी",
+  venue:"नॉर्थ लॉन्स, GCC होटल एंड क्लब", addr:"नॉर्थ लॉन्स, GCC होटल एंड क्लब, मीरा रोड",
+  vnote:"यात्रा और ठहरने की जानकारी तारीख के नज़दीक आपको साझा की जाएगी।",
+  events:"हल्दी | 18 जन॰ · सुबह | हल्दी की रस्म, गीत और ढेर सारी शरारतें।\nसंगीत | 18 जन॰ · शाम | ढोल, नाच-गाना और रात्रिभोज।\nविवाह | 19 जन॰ · सुबह | फेरे, आशीर्वाद और भोज।",
+  wardrobe:"हल्दी | पीला और सफ़ेद | सूती साड़ी, हल्के लहँगे | कुर्ता, पेस्टल या पीला\nसंगीत | गहरे रत्न रंग | लहँगा, गाउन, इंडो-वेस्टर्न | बंदगला, शेरवानी\nविवाह | पेस्टल और सुनहरा | सिल्क साड़ी, लहँगा | शेरवानी, कुर्ता सेट"
+ },
+ mr:{
+  n1:"विकास", n2:"राशी",
+  p1:"~नातू\n~आजी–आजोबा\nकै. सौ. रामावतीदेवी व कै. श्री. रामनरेश गुप्ता\n~आजोळ: आजी–आजोबा\nसौ. राजकुमारी व कै. श्री. जगन्नाथ गुप्ता\n~चिरंजीव\nसौ. नीलू व श्री. प्रकाश गुप्ता",
+  p2:"~सुकन्या\nसौ. अनिता व श्री. राजकुमार दरक",
+  dateText:"24 नोव्हेंबर 2026", place:"GCC हॉटेल्स अँड क्लब",
+  tag:"लिट्टी चोखा भेटतो दाल बाटीला", tag2:"भुकेले या, नाचायला या.",
+  intro:"आनंदी अंतःकरणाने आणि कुटुंबीयांच्या आशीर्वादाने, आमच्या सदैवच्या सोबतीच्या सुरुवातीचा आनंद साजरा करण्यासाठी आम्ही तुम्हाला आमंत्रित करतो.",
+  line:"दोन परंपरा.\nएक सुंदर कायमचं नातं.\nवेगळी मुळं, एक सामायिक ताल, आणि घरासारखं वाटणारं प्रेम.",
+  storyT:"लांबचा रस्ता",
+  story:"रोजच्या गप्पा आणि छोट्या छोट्या गोष्टींच्या मधेच कुठेतरी आम्हाला काहीतरी असामान्य सापडलं: एकमेकांची साथ. आता आमची दोन जगं एक होत आहेत, ज्यात प्रत्येक परंपरेला, प्रत्येक हास्याला आणि आम्हाला प्रिय असलेल्या प्रत्येकासाठी जागा आहे.\n\nआणि ही तर फक्त सुरुवात आहे…",
+  sign:"प्रेमासह, विकास आणि राशी",
+  venue:"नॉर्थ लॉन्स, GCC हॉटेल अँड क्लब", addr:"नॉर्थ लॉन्स, GCC हॉटेल अँड क्लब, मीरा रोड",
+  vnote:"प्रवास आणि निवासाची माहिती तारखेच्या जवळ तुम्हाला कळवली जाईल.",
+  events:"हळद | 18 जाने. · सकाळ | हळदीचा रंग, गाणी आणि भरपूर मस्ती.\nसंगीत | 18 जाने. · संध्याकाळ | ढोल, नाच आणि जेवण.\nविवाह | 19 जाने. · सकाळ | सप्तपदी, आशीर्वाद आणि मेजवानी.",
+  wardrobe:"हळद | पिवळा आणि पांढरा | सुती साड्या, हलके लेहंगे | कुर्ता, पेस्टल किंवा पिवळा\nसंगीत | गडद रत्नरंग | लेहंगा, गाउन, इंडो-वेस्टर्न | बंदगळा, शेरवानी\nविवाह | पेस्टल आणि सोनेरी | रेशमी साडी, लेहंगा | शेरवानी, कुर्ता सेट"
+ }
 };
 /* ================= END OF EDITABLE DETAILS ================= */
 var D=Object.assign({},DEF);
@@ -182,7 +217,7 @@ var DV='<div class="dv" aria-hidden="true"><i></i><b></b><b class="s"></b><b></b
 var LP='<svg viewBox="0 0 30 44" width="30" height="44" aria-hidden="true"><path d="M9 10h12l3 5H6z" fill="#c9972f"/><path d="M6 15h18l-2 20c-.5 3-4 5-7 5s-6.5-2-7-5z" fill="#f3c969" stroke="#c9972f"/><circle class="gl" cx="15" cy="27" r="5" fill="#fff6cc"/><path d="M12 40h6l-3 4z" fill="#c9972f"/></svg>';
 var LAMPS=[[22,18],[37,44],[50,24],[63,44],[78,18]].map(function(a,i){return'<div class="lamp" style="left:'+a[0]+'%;animation-delay:-'+(i*.7)+'s"><span style="height:'+a[1]+'px"></span>'+LP+'</div>'}).join('');
 function par(x){return esc(x).split('\n').map(function(l){return l.charAt(0)=='~'?'<span class="pl">'+l.slice(1)+'</span>':'<span class="pn">'+l+'</span>'}).join('')}
-function build(){
+function build(){D=Object.assign({},DEF,TR[L]||{});
  var t=T[L],g=guest||t.guest,ini=D.n1.charAt(0)+'&'+D.n2.charAt(0);
  document.documentElement.lang=L;document.title=D.n1+' & '+D.n2+' — '+D.dateText;
  $('cardT').textContent=t.cardT.replace('%a',D.n1).replace('%b',D.n2);$('eInv').textContent=t.inv;$('eFor').textContent=t.forg+' '+g;$('eI2').textContent=t.inv;$('eNames').textContent=D.n1+' & '+D.n2;$('eTap').textContent=t.tap;$('skip').textContent=t.skip;$('lang').textContent=L.toUpperCase();
