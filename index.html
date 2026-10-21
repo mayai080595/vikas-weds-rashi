@@ -158,7 +158,7 @@ var DEF={
   // Embedded map shown in the Venue section (Google Maps > Share > Embed a map > copy the src link; "" hides the map)
   mapEmbed:"https://www.google.com/maps?q=North+Lawns+GCC+Hotel+and+Club+Mira+Road&output=embed",
   vnote:"Travel and stay details will be shared with you closer to the date.",
-  // Events tab: one per line, written as  Name | When | Description  (separate lines with \n)
+  // Events tab: one per line, written as  Name | When | Description | Address (separate lines with \n)
   events:"Sangeet and Tilak | 21 Nov · Evening 6:00 p.m. | Dhol, dance-offs and dinner. | Shree Balaji. \nHaldi | 22 Nov · Morning 4:00 p.m. | A splash of turmeric, songs and plenty of mischief.\nBaraat Prasthan | 24 Nov · Evening 4:00 p.m. | Band, baja, the baraatis, and fireworks.\nVarmala followed by Reception | 24 Nov · Evening 8:00 p.m. | The exchange of garlands and promise to be together forever, the blessings.\nPheras | 25 Nov · Night 1:15 a.m. | The vows, the pheras, the blessings.",
   // Wardrobe tab: one per line, written as  Event | Colours | Women | Men  (separate lines with \n)
   wardrobe:"Haldi | Yellow & white | Cotton sarees, light lehengas | Kurta, pastel or yellow\nSangeet | Jewel tones | Lehenga, gown, indo-western | Bandhgala, sherwani\nWedding | Pastels & gold | Silk saree, lehenga | Sherwani, kurta set",
@@ -223,7 +223,7 @@ function build(){D=Object.assign({},DEF,TR[L]||{});
  var t=T[L],g=guest||t.guest,ini=D.n1.charAt(0)+'&'+D.n2.charAt(0);
  document.documentElement.lang=L;document.title=D.n1+' & '+D.n2+' — '+D.dateText;
  $('cardT').textContent=t.cardT.replace('%a',D.n1).replace('%b',D.n2);$('eInv').textContent=t.inv;$('eFor').textContent=t.forg+' '+g;$('eI2').textContent=t.inv;$('eNames').textContent=D.n1+' & '+D.n2;$('eTap').textContent=t.tap;$('skip').textContent=t.skip;$('lang').textContent=L.toUpperCase();
- var ev=rows(D.events,3).map(function(r){return'<div class="ev"><h3>'+esc(r[0])+'</h3><div class="w">'+esc(r[1])+'</div><div>'+esc(r[2])+'</div></div>'}).join('');
+ var ev=rows(D.events,4).map(function(r){return'<div class="ev"><h3>'+esc(r[0])+'</h3><div class="w">'+esc(r[1])+'</div><div>'+esc(r[2])+'</div><div>'+esc(r[3])+'</div></div>'}).join('');
  var wr=rows(D.wardrobe,4).map(function(r){return'<tr><td><b>'+esc(r[0])+'</b></td><td>'+esc(r[1])+'</td><td>'+esc(r[2])+'</td><td>'+esc(r[3])+'</td></tr>'}).join('');
  var story=D.story.split(/\n\s*\n/).map(function(p){return'<p>'+esc(p)+'</p>'}).join('');
  var panes=[
